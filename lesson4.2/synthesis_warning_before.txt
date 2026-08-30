@@ -1,0 +1,18 @@
+Synthesis warning captured for the buggy mux2to1.sv (incomplete case, no
+default -> unintended latch). Vivado v2026.1, part xc7z010clg400-1,
+synth_design -mode out_of_context.
+
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg' [mux2to1.sv:15]
+
+Cell Usage report (Vivado Synthesis Report):
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LD   |     1|
++------+-----+------+
+
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+The LD cell is the inferred latch - confirms the tool implemented a
+transparent latch to hold `out` when sel=1 (the undescribed branch),
+instead of pure combinational logic.
