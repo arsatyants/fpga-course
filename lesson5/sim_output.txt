@@ -1,0 +1,24 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:01:26 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Sun Sep  6 03:02:09 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_sim/xsim_script.tcl
+# xsim {tb_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS: Load value 10 | expected=10 actual=10 time=16000
+PASS: Count up 3 clocks from 10 to 13 | expected=13 actual=13 time=46000
+PASS: Count up 3 more clocks with wrap 15->0 | expected=0 actual=0 time=76000
+PASS: Hold value when en=0 | expected=0 actual=0 time=96000
+PASS: Count down wrap 0->15 | expected=15 actual=15 time=106000
+PASS: Priority load over en | expected=5 actual=5 time=116000
+PASS: Bonus: down-count 8->7 | expected=7 actual=7 time=136000
+$finish called at time : 136 ns : File "/media/arsatyants/62ed41ca-3b8b-450e-8a0d-83de627e2f24/code/fpga-course/lesson5/tb_counter.v" Line 112
+exit
+INFO: xsimkernel Simulation Memory Usage: 151212 KB (Peak: 208036 KB), Simulation CPU Usage: 850 ms
+INFO: [Common 17-206] Exiting xsim at Sun Sep  6 03:02:13 2026...
