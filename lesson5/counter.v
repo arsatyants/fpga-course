@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 // 4-bit up/down counter with async reset and sync load.
 module counter (
     // Clock input.

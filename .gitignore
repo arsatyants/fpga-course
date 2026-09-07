@@ -9,3 +9,6 @@
 *.str
 webtalk*
 vivado_pid*
+xsim.dir/
+*.wdb
+*.pb
