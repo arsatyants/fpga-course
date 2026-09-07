@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:01:26 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Tue Sep  8 01:52:45 2026
+# Process ID         : 162145
+# Current directory  : /media/arsatyants/62ed41ca-3b8b-450e-8a0d-83de627e2f24/code/fpga-course/lesson7
+# Command line       : xsim -mode tcl -source {xsim.dir/tb_sim_expr/xsim_script.tcl}
+# Log file           : /media/arsatyants/62ed41ca-3b8b-450e-8a0d-83de627e2f24/code/fpga-course/lesson7/xsim.log
+# Journal file       : /media/arsatyants/62ed41ca-3b8b-450e-8a0d-83de627e2f24/code/fpga-course/lesson7/xsim.jou
+# Running On         : ars-nitro
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.4 LTS
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13420H
+# CPU Frequency      : 3799.961 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 12
+# Host memory        : 16453 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 20748 MB
+# Available Virtual  : 8769 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_sim_expr/xsim_script.tcl
+# xsim {tb_sim_expr} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+[26000 ns] PASS (plain): case1: (5+3)*4-10=22 -> result=22
+[36000 ns] PASS (pipelined): case1: (5+3)*4-10=22 -> result=22
+[56000 ns] PASS (plain): case2: (10+20)*2-5=55 -> result=55
+[66000 ns] PASS (pipelined): case2: (10+20)*2-5=55 -> result=55
+[66000 ns] Simulation finished
+$finish called at time : 66 ns : File "/media/arsatyants/62ed41ca-3b8b-450e-8a0d-83de627e2f24/code/fpga-course/lesson7/tb_expr.v" Line 69
+exit
+INFO: xsimkernel Simulation Memory Usage: 142516 KB (Peak: 208052 KB), Simulation CPU Usage: 820 ms
+INFO: [Common 17-206] Exiting xsim at Tue Sep  8 01:52:47 2026...

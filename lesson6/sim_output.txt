@@ -1,0 +1,29 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:01:26 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Tue Sep  8 01:51:13 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_sim_lock/xsim_script.tcl
+# xsim {tb_sim_lock} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+[6000 ns] after reset: state=0 (expect LOCKED=0)
+[126000 ns] PASS: digit1 correct -> state=1
+[246000 ns] PASS: digit2 correct -> state=2
+[366000 ns] PASS: digit3 correct -> state=3
+[366000 ns] PASS: unlocked_led=1 after correct sequence
+[496000 ns] PASS: digit1 correct -> state=1
+[616000 ns] PASS: digit2 WRONG -> reset to LOCKED -> state=0
+[736000 ns] PASS: digit1 WRONG -> stays LOCKED -> state=0
+[856000 ns] PASS: digit1 correct -> state=1
+[976000 ns] PASS: digit2 correct -> state=2
+[1096000 ns] PASS: digit3 WRONG -> reset to LOCKED -> state=0
+[1096000 ns] Simulation finished
+$finish called at time : 1096 ns : File "/media/arsatyants/62ed41ca-3b8b-450e-8a0d-83de627e2f24/code/fpga-course/lesson6/tb_lock_controller.v" Line 87
+exit
+INFO: xsimkernel Simulation Memory Usage: 142512 KB (Peak: 208048 KB), Simulation CPU Usage: 810 ms
+INFO: [Common 17-206] Exiting xsim at Tue Sep  8 01:51:16 2026...
