@@ -1,0 +1,27 @@
+# Vivado build artifacts
+*.jou
+*.log
+*.str
+*.backup.*
+*.bak
+.Xil/
+vivado*.backup*
+
+# Runs (all generated during synth/impl)
+*.runs/
+*.cache/
+*.hw/
+*.sim/
+*.gen/
+*.ip_user_files/
+
+# Keep .srcs (sources), .xpr, .xsa, .bd, .xci
+# (handled by explicit negations below where needed)
+
+# Compiler / build intermediates
+*.o
+*.d
+*.elf
+!LED_AXI_GPIO_*_app.elf
+*.objdump
+manual/
