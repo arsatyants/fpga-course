@@ -75,10 +75,6 @@ state wait_fsync:
 
 ![Vivado ILA end](docs/vivado_ila_end.png)
 
-start, загальний вигляд — шини розгорнуті по бітах:
-
-![Vivado ILA start, overview](<docs/Screenshot from 2026-10-07 08-50-27.png>)
-
 ## 4. Порівняння ILA ↔ симуляція того самого проєкту
 
 Симуляція — системна Behavioral (XSim) того самого `top` з ELF lesson12 у LMB (`vivado/sim.tcl`, ILA вимкнена
