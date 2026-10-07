@@ -1,0 +1,18 @@
+# HLS: робочі каталоги не комітимо, крім звітів, згенерованого RTL і запакованого IP
+hls/*/moving_max/**
+!hls/*/moving_max/**/
+!hls/*/moving_max/moving_max.zip
+!hls/*/moving_max/reports/*.rpt
+!hls/*/moving_max/hls/syn/report/*csynth.rpt
+!hls/*/moving_max/hls/syn/verilog/*.v
+# Vivado: проєкт і IP-репозиторій відтворює vivado/create_project.tcl
+vivado/moving_max_sim/
+vivado/ip_repo/
+vivado/.Xil/
+vivado/*.wcfg
+*.log
+*.jou
+*.str
+*.pb
+gui_ready
+__pycache__/
