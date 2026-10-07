@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<wave_config>
+	<wave_state>
+	</wave_state>
+	<db_ref_list>
+		<db_ref path="/media/arsatyants/62ed41ca-3b8b-450e-8a0d-83de627e2f24/code/fpga-course/lesson14/hw/.Xil/Vivado-103493-ars-nitro/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1" type="auto">
+			<top_modules>
+				<top_module name="top">
+				</top_module>
+			</top_modules>
+		</db_ref>
+	</db_ref_list>
+	<WVObjectSize size="7">
+	</WVObjectSize>
+	<wvobject fp_name="pix_data" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">pix_data[7:0]</obj_property>
+		<obj_property name="ObjectShortName">pix_data[7:0]</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="pix_valid" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">pix_valid</obj_property>
+		<obj_property name="ObjectShortName">pix_valid</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="pix_fsync" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">pix_fsync</obj_property>
+		<obj_property name="ObjectShortName">pix_fsync</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="dbg_start" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">dbg_start</obj_property>
+		<obj_property name="ObjectShortName">dbg_start</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="btn_IBUF" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">btn_IBUF[0:0]</obj_property>
+		<obj_property name="ObjectShortName">btn_IBUF[0:0]</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="dbg_status" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">dbg_status[1:0]</obj_property>
+		<obj_property name="ObjectShortName">dbg_status[1:0]</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="led_OBUF" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">led_OBUF[0:0]</obj_property>
+		<obj_property name="ObjectShortName">led_OBUF[0:0]</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+</wave_config>
+

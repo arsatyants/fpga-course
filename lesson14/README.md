@@ -60,6 +60,25 @@ state wait_fsync:
 
 Файли `.ila` відкриваються у Vivado: `read_hw_ila_data hw/captures/start.ila; display_hw_ila_data`.
 
+### Скриншоти Waveform з Vivado (Hardware Manager, захоплені дані з плати)
+
+`hw/show_ila.tcl` відкриває `.ila` у GUI з зумом навколо тригера, курсором на тригері і `pix_data`
+як аналоговим графіком (зум задається через `.wcfg` — Tcl-команд зуму у Vivado немає).
+
+**start** — до тригера (червона мітка T, семпл 4096) на шині сміття бланкінгу, у точці тригера `pix_fsync`
+і початок `pix_valid`, далі рампи рядків по 800 семплів (8 мкс) з бланкінгом 100 семплів (1 мкс):
+
+![Vivado ILA start](docs/vivado_ila_start.png)
+
+**end** — тригер на спаді `busy` (`dbg_status` 1 → 0, семпл 31000): останній рядок закінчився, `pix_valid` = 0,
+через ~140 семплів MicroBlaze знімає `start`, ще через ~300 — вмикає `led[0]` (`led_OBUF` 1 → 0, active-low):
+
+![Vivado ILA end](docs/vivado_ila_end.png)
+
+start, загальний вигляд — шини розгорнуті по бітах:
+
+![Vivado ILA start, overview](<docs/Screenshot from 2026-10-07 08-50-27.png>)
+
 ## 4. Порівняння ILA ↔ симуляція того самого проєкту
 
 Симуляція — системна Behavioral (XSim) того самого `top` з ELF lesson12 у LMB (`vivado/sim.tcl`, ILA вимкнена

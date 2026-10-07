@@ -14,3 +14,4 @@ hw/*.status
 hw/ila_status.txt
 hw/captures/*.vcd
 __pycache__/
+hw/captures/*.wcfg
