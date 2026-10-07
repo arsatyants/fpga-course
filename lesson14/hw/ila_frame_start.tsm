@@ -1,0 +1,14 @@
+# Lesson 14: перший піксель кадру, захопленого ПІСЛЯ фронту start
+state wait_start:
+    if (dbg_start == 1'bR) then
+        goto wait_fsync;
+    else
+        goto wait_start;
+    endif
+
+state wait_fsync:
+    if ((pix_fsync == 1'b1) && (pix_valid == 1'b1)) then
+        trigger;
+    else
+        goto wait_fsync;
+    endif

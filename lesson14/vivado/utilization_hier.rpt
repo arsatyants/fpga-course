@@ -1,0 +1,37 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (lin64) Build 6511674 Tue Jun 16 11:01:26 MDT 2026
+| Date         : Wed Oct  7 03:57:10 2026
+| Host         : ars-nitro running 64-bit Ubuntu 24.04.5 LTS
+| Command      : report_utilization -hierarchical -hierarchical_depth 2 -file ./utilization_hier.rpt
+| Design       : top
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++----------------+----------------------------+------------+------------+---------+------+-------+--------+--------+------------+
+|    Instance    |           Module           | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs  | RAMB36 | RAMB18 | DSP Blocks |
++----------------+----------------------------+------------+------------+---------+------+-------+--------+--------+------------+
+| top            |                      (top) |       9838 |       8499 |     780 |  559 | 12098 |     48 |      0 |          3 |
+|   (top)        |                      (top) |          0 |          0 |       0 |    0 |     0 |      0 |      0 |          0 |
+|   dbg_hub      |                    dbg_hub |        450 |        426 |      24 |    0 |   741 |      0 |      0 |          0 |
+|     inst       | dbg_hub_xsdbm_v3_0_6_xsdbm |        450 |        426 |      24 |    0 |   741 |      0 |      0 |          0 |
+|   u_ila        |                      ila_0 |       2679 |       2142 |     128 |  409 |  3899 |     15 |      0 |          0 |
+|     inst       |      ila_0_ila_v6_2_20_ila |       2679 |       2142 |     128 |  409 |  3899 |     15 |      0 |          0 |
+|   u_src        |            pix_pattern_gen |         68 |         67 |       0 |    1 |    72 |      0 |      0 |          0 |
+|   u_sys        |           design_1_wrapper |       6641 |       5864 |     628 |  149 |  7386 |     33 |      0 |          3 |
+|     design_1_i |                   design_1 |       6641 |       5864 |     628 |  149 |  7386 |     33 |      0 |          3 |
++----------------+----------------------------+------------+------------+---------+------+-------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+
