@@ -867,6 +867,21 @@
           }
         }
       }
+    },
+    "elf_association": {
+      "file": {
+        "name": "../../../../../../vitis/LED_AXI_GPIO_MB_app.elf",
+        "type": "ELF",
+        "checksum": "1317217662",
+        "IsVisible": "1",
+        "ScopedToRef": "design_1",
+        "ScopedToCell": [
+          "microblaze_0"
+        ],
+        "UsedIn": [
+          "simulation"
+        ]
+      }
     }
   }
 }
